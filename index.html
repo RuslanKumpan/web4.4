@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" !important>
+
+    <title>Учебный сайт</title>
+</head>
+
+<body class="m-0">
+    <header class="header container-fluid">
+        <div class="header__inner container-lg">
+            <div class="row">
+                <div class="header__logo col-3 float-left">
+                    <img src="https://matveyakulov.gitlab.io/web3/logo.png" alt="Картинка не доступна">
+                </div>
+                <div class="header__title col-9 d-flex">
+                    <span class="ml-2">Название сайта</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav container-lg">
+        <ul class="nav__link col d-md-flex">
+            <li class="col-md-4 pr-3"><a href="#link">Список гиперссылок</a></li>
+            <li class="col-md-4 pr-3"><a href="#form">Форма</a></li>
+            <li class="col-md-4"><a href="#footer">Подвал</a></li>
+        </ul>
+    </nav>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col">
+                <div class=" d-flex flex-column">
+                    <section class="link" id="link">
+                        <ol class="link__list">
+                            <li class="link__menu__item"><a href="http://www.example.com">www.example.com</a></li>
+                            <li class="link__menu__item"><a href="https://www.example.com">www.example.com</a></li>
+                            <li class="link__menu__item"><a href="ftp://@example.com/hranilishe/1.txt">example.com</a>
+                            </li>
+                            <li class="link__menu__item"><a
+                                    href="ftp://test:password@example.com/hranilishe/1.txt">example.com</a>
+                            </li>
+                            <li class="link__menu__item"><a href="http://www.example.com#about">example.com/about</a>
+                            </li>
+                            <li class="link__menu__item"><a href="#form">form</a></li>
+                            <li class="link__menu__item"><a href="http://www.example.com?a&b">example.com/a&b</a></li>
+                            <li class="link__menu__item"><a href="#ul__link">Список</a></li>
+                            <li class="link__menu__item"><a>Список</a></li>
+                            <li class="link__menu__item"><a href="#">Пустая ссылка</a></li>
+                            <li class="link__menu__item"><a href="http://www.example.com" rel="nofollow">example.com</a>
+                            </li>
+                            <li class="link__menu__item"><a href="http://www.example.com" rel="noindex">example.com</a>
+                            </li>
+                            <li class="link__menu__item">
+                                <p>Вот это <a href="">Ссылка 13</a></p>
+                            </li>
+                            <li class="link__menu__item"><a href="http://www.example.com"><img src="https://matveyakulov.gitlab.io/web3/logo.png"
+                                        alt="Недоступно"></a></li>
+                            <li class="link__menu__item">
+                                <img src="https://pixy.org/src/7/thumbs350/71281.jpg" alt="Недоступно" width="150"
+                                    height="150" usemap="#box">
+                                <map name="box">
+                                    <area shape="rect" coords="0,0,75,75" href="https://mail.ru/" target="_blank"
+                                        alt="Недоступно">
+                                    <area shape="rect" coords="0,75,75,150" href="https://www.kubsu.ru/ru"
+                                        target="_blank" alt="Недоступно">
+                                    <area shape="rect" coords="75,0,150,75" href="https://www.youtube.com/"
+                                        target="_blank" alt="Недоступно">
+                                    <area shape="rect" coords="75,75,150,150" href="https://www.twitch.tv/"
+                                        target="_blank" alt="Недоступно">
+                                </map>
+                            </li>
+                            <li class="link__menu__item"><a href="index.html">index.html</a></li>
+                            <li class="link__menu__item"><a href="about/index.html">about/index.html</a></li>
+                            <li class="link__menu__item"><a href="../index.html">index.html</a></li>
+                            <li class="link__menu__item"><a href="../../index.html">index.html</a></li>
+                            <li class="link__menu__item"><a href="index.html">index.html</a></li>
+                            <li class="link__menu__item"><a href="demo.html">demo.html</a></li>
+                        </ol>
+                    </section>
+                    <div class="table order-1 order-md-0">
+                        <table>
+                            <tr>
+                                <th>Россия</th>
+                                <th>Великобритания</th>
+                                <th>Европа</th>
+                                <th>Длина ступни, см</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="">34,5</td>
+                                <td>3,5</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="align-middle">35,5</td>
+                                <td>4</td>
+                                <td>36⅔</td>
+                                <td>23–23,5</td>
+                            </tr>
+                            <tr>
+                                <td>4,5</td>
+                                <td>37⅓</td>
+                                <td>23,5</td>
+                            </tr>
+                            <tr>
+                                <td>36,5</td>
+                                <td>5</td>
+                                <td>38</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>37</td>
+                                <td>5,5</td>
+                                <td>38⅔</td>
+                                <td>24,5</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>6</td>
+                                <td>39⅓</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>38,5</td>
+                                <td>6,5</td>
+                                <td>40</td>
+                                <td>25,5</td>
+                            </tr>
+                            <tr>
+                                <td>39</td>
+                                <td>7</td>
+                                <td>40⅔</td>
+                                <td>25,5–26</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>7,5</td>
+                                <td>41⅓</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>40,5</td>
+                                <td>8</td>
+                                <td>42</td>
+                                <td>26,5</td>
+                            </tr>
+                            <tr>
+                                <td>41</td>
+                                <td>8,5</td>
+                                <td>42⅔</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>9</td>
+                                <td>43⅓</td>
+                                <td>27,5</td>
+                            </tr>
+                            <tr>
+                                <td>43</td>
+                                <td>9,5</td>
+                                <td>44</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>43,5</td>
+                                <td>10</td>
+                                <td>44⅔</td>
+                                <td>28–28,5</td>
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td>10,5</td>
+                                <td>45⅓</td>
+                                <td>28,5–29</td>
+                            </tr>
+                            <tr>
+                                <td>44,5</td>
+                                <td>11</td>
+                                <td>46</td>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <td>45</td>
+                                <td>11,5</td>
+                                <td>46⅔</td>
+                                <td>29,5</td>
+                            </tr>
+                            <tr>
+                                <td>46</td>
+                                <td>12</td>
+                                <td>47⅓</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>46,5</td>
+                                <td>12,5</td>
+                                <td>48</td>
+                                <td>30,5</td>
+                            </tr>
+                            <tr>
+                                <td>47</td>
+                                <td>13</td>
+                                <td>48⅔</td>
+                                <td>31</td>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>13,5</td>
+                                <td>49⅓</td>
+                                <td>31,5</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <form action="https://www.example.com" method="POST" class="form__btn d-flex flex-column" id="form">
+                        <input type="text" placeholder="Введите имя">
+                        <input type="email" placeholder="test@example.com">
+                        <input type="date" name="18.01.20">
+                        <p>Выберите пол</p>
+                        <div>
+                            <label>
+                                <input type="radio" value="Мужской" name="пол">Мужской
+                            </label>
+                            <label>
+                                <input type="radio" value="Женский" name="пол">Женский
+                            </label>
+                        </div>
+                        <p>Выберите количество конечностей</p>
+                        <div>
+                            <label>
+                                <input type="radio" value="1" name="Колво конечностей">1
+                            </label>
+                            <label>
+                                <input type="radio" value="2" name="Колво конечностей">2
+                            </label>
+                            <label>
+                                <input type="radio" value="3" name="Колво конечностей">3
+                            </label>
+                            <label>
+                                <input type="radio" value="4" name="Колво конечностей">4
+                            </label>
+                            <label>
+                                <input type="radio" value="5" name="Колво конечностей">5
+                            </label>
+                            <label>
+                                <input type="radio" value="6" name="Колво конечностей">6
+                            </label>
+                        </div>
+                        <div>
+                            <p class="combobox__text">
+                                Выберите сверхспособность
+                            </p>
+                            <select multiple class="combobox">
+                                <option value="Бессмертие" selected="selected">Бессмертие</option>
+                                <option value="Прохождение сквозь стены" selected="selected">Прохождение сквозь стены
+                                </option>
+                                <option value="Левитация" selected="selected">Левитация </option>
+                            </select>
+                        </div>
+                        <textarea placeholder="Ваша биография"></textarea>
+                        <label>
+                            <input type="checkbox" checked="checked" name="Контракт">С контрактом ознакомлен
+                        </label>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer container-fluid" id="footer">
+        <div class="row">
+            <div class="col">
+                <div class="footer__inner col ml-5">
+                    <span class="">(c) Кумпан Руслан</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
